@@ -9,7 +9,7 @@
   <body style="background-image: url('METAEVENT_ADVENTUREPROGRESSION.jpg')">
     <div class="header">
 
-      <div style="display:flex; justify-content:space-between;margin-bottom:3rem;width: 400px;">
+      <div class="responsive" style="display:flex; justify-content:space-between;margin-bottom:3rem;width: 400px;">
         <div style="background-image: url('ubisoft.jpg'); background-repeat:no-repeat;width:100px;height:30px"></div>
         <div class="border" style="border-left: 1px solid;"></div>
         <div style="background-image: url('Taylor_Wessing.jpg'); background-repeat:no-repeat;width:150px;height:30px"></div>
@@ -29,20 +29,13 @@
 
 <style>
 
-  @media (max-width:1440px){
-    body {
-      background-size: cover;
-    }
-  }
-
-  @media (max-width:900px){
-    .header {
-      padding:50px !important;
-    }
-  }
-
   body {
-    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+  }
+
+  body::-webkit-scrollbar, p::-webkit-scrollbar {
+    width: 0;
   }
 
   * {
@@ -52,6 +45,7 @@
   h1 {
     font-weight:900;
     font-size:2.5rem;
+    text-align:center;
   }
 
   p {
@@ -77,6 +71,7 @@
   }
 
   span {
+    color:#fff;
     position:absolute;
     top: 95%; left: 50%;
     transform: translate(-50%, -50%);
@@ -91,10 +86,9 @@
     border-radius: 25px;
   }
 
-    a:hover {
+  a:hover {
     color:#666666;
     border: 1px solid #666666;
-
   }
 
 </style>
