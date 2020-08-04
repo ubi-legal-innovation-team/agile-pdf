@@ -1,0 +1,112 @@
+  @font-face {
+   font-family: 'Ubisoft bold';
+   src: url('fonts/UbisoftSans-Bold.ttf');
+}
+
+@font-face {
+   font-family: 'Ubisoft regular';
+   src: url('fonts/UbisoftSans-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, h6, strong, .strong {
+  font-family: 'Ubisoft bold';
+}
+
+span, label, p, a, ul, li, input {
+  font-family: 'Ubisoft regular';
+}
+
+body {
+  height:100vh;
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+body::-webkit-scrollbar, p::-webkit-scrollbar {
+  width: 0;
+}
+
+h1 {
+  font-size:3rem;
+  text-align:center;
+  letter-spacing:.10rem;
+}
+
+p {
+  color:#666666;
+  text-align:center;
+  width: 700px;
+  letter-spacing:.10rem;
+  font-size:1.2rem;
+}
+
+.header {
+  padding:50px 10px;
+  background-color:#fff;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  width:80%;
+  height:68%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+span {
+  color:#fff;
+  position:absolute;
+  top: 96%; left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing:.10rem;
+  width:max-content;
+}
+
+a {
+  color:#000;
+  border: 1px solid #000;
+  margin-top:auto;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 25px;
+  letter-spacing:.22em;
+}
+
+a:hover {
+  color:#666666;
+  border: 1px solid #666666;
+}
+
+@media only screen and (max-width:1440px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size:1rem;
+    width:600px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  h1 {
+    font-size:2rem;
+  }
+
+  p {
+    font-size:.8rem;
+    width:auto;
+    padding:0 25px;
+  }
+
+  .header {
+    width:90%;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  h1 {
+    font-size:1.8rem;
+  }
+}
+
